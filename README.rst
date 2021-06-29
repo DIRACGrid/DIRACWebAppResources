@@ -13,8 +13,14 @@ You likely don't need to know about this package and should read about `WebAppDI
 Changelog
 ~~~~~~~~~
 
-1.0 (based on ExtJS 6.2.0)
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.0.0
+^^^^^
+
+* Switch back to using ``package_data`` instead of ``data_files`` for distributing assets
+
+1.0.0 (based on ExtJS 6.2.0)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Initial release
 
