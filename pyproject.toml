@@ -1,3 +1,31 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "DIRACWebAppResources"
+version = "1.0.1"
+description = "DIRACWebAppResources contains slowly changing assets for WebAppDIRAC"
+readme = "README.rst"
+requires-python = ">=3.9"
+license = {text = "GPL-3.0-only"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Distributed Computing",
+]
+
+[project.urls]
+Homepage = "https://diracgrid.org"
+Repository = "https://github.com/DIRACGrid/DIRACWebAppResources"
+Issues = "https://github.com/DIRACGrid/DIRACWebAppResources/issues"
+Security = "https://github.com/DIRACGrid/DIRACWebAppResources/security/policy"
+
+[project.entry-points.dirac]
+metadata = "DIRACWebAppResources:extension_metadata"
+
+[tool.setuptools.packages.find]
+where = ["src"]
